@@ -1,3 +1,7 @@
-p{
-	color:blue;
+p.lead{
+	text-size:1.3rem;
+}
+
+.red{
+color:red;
 }
