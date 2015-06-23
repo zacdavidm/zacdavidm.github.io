@@ -14,3 +14,9 @@ p.lead{
 .red{
 color:red;
 }
+
+.page{
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
