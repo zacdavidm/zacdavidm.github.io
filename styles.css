@@ -1,3 +1,7 @@
+body{
+	overflow-x:hidden;
+}
+
 p.lead{
 	font-size:1.3rem;
 }
