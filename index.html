@@ -69,7 +69,12 @@ No! use a &lt;br&gt; tag to make a line break (in the same paragraph).</p>
           <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
         </li>
       </ul>
-      
+      <ul class="add-todo">
+    	<li>
+     	 <input type="text" class="txt" placeholder="New Todo"
+             ng-model="newTodo" ng-keyup="add($event)" />
+    	</li>
+  	  </ul>
     </div>  
 
   </div>
