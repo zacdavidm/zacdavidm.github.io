@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/styles.css">
 
 </head>
-<body>
+<body ng-app="Todo">
 <div class="page">
 
 <div class="row">
@@ -27,35 +27,40 @@
 
   </div>
   <div class="col-md-8">
-  <p class="lead">this is some paragraph text showing what you can do. <br>
+  	<p class="lead">this is some paragraph text showing what you can do. <br>
 Can I make a second paragraph  by hitting return?<br>
 No! use a &lt;br&gt; tag to make a line break (in the same paragraph).</p>
 
-<!-- need to show a comment example -->
+	<!-- need to show a comment example -->
 
-<!--p> hello there commented paragraph </p-->
+	<!--p> hello there commented paragraph </p-->
 
-<p>
-left off at: <a href="http://www.w3schools.com/html/html_paragraphs.asp">here</a>
-</p>
+	<p>
+	left off at: <a href="http://www.w3schools.com/html/html_paragraphs.asp">here</a>
+	</p>
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://games.cdn.famobi.com/html5games/j/jetpack-master/v2/?fg_domain=play.famobi.com&fg_aid=A1000-1&fg_uid=3d29f086-1059-4efb-9b1a-4b6460d35607&fg_pid=4638e320-4444-4514-81c4-d80a8c662371&fg_beat=759"></iframe>
-</div>
+	<div class="embed-responsive embed-responsive-16by9">
+  	<iframe class="embed-responsive-item" src="http://games.cdn.famobi.com/html5games/j/jetpack-master/v2/?fg_domain=play.famobi.com&fg_aid=A1000-1&fg_uid=3d29f086-1059-4efb-9b1a-4b6460d35607&fg_pid=4638e320-4444-4514-81c4-d80a8c662371&fg_beat=759"></iframe>
+	</div>
 
-<h2 id="students">Students</h2>
+	<h2 id="students">Students</h2>
 
-<p class="lead red">Warning: My students are awesome! So much more awesome than yours!</p>
+	<p class="lead red">Warning: My students are awesome! So much more awesome than yours!</p>
 
-<p>
-Zac: ZacDavidM <a target="_blank" href="http://github.com/zacdavidm/zacdavidm.github.io">(code)</a> <a href="http://zacdavidm.github.io">(site)</a> <br>
-Julia: XXXJimmyXXX <a target="_blank" href="http://github.com/XXXJimmyXXX/XXXJimmyXXX.github.io">(code)</a> <a target="_blank" href="http://XXXJimmyXXX.github.io">(site)</a> <br>
-Jimmy: potato-craft <a target="_blank" href="http://github.com/potato-craft/potato-craft.github.io">(code)</a> <a target="_blank" href="http://potato-craft.github.io">(site)</a> <br>
-Anna: Amgestiehr3 <a target="_blank" href="http://github.com/Amgestiehr3/Amgestiehr3.github.io">(code)</a> <a target="_blank" href="http://Amgestiehr3.github.io">(site)</a> <br>
-James: TheAndroidMaster <a target="_blank" href="http://github.com/TheAndroidMaster/TheAndroidMaster.github.io">(code)</a> <a target="_blank" href="http://TheAndroidMaster.github.io">(site)</a> <br>
-</p>
+	<p>
+	Zac: ZacDavidM <a target="_blank" href="http://github.com/zacdavidm/zacdavidm.github.io">(code)</a> <a href="http://zacdavidm.github.io">(site)</a> <br>
+	Julia: XXXJimmyXXX <a target="_blank" href="http://github.com/XXXJimmyXXX/XXXJimmyXXX.github.io">(code)</a> <a target="_blank" href="http://XXXJimmyXXX.github.io">(site)</a> <br>
+	Jimmy: potato-craft <a target="_blank" href="http://github.com/potato-craft/potato-craft.github.io">(code)</a> <a target="_blank" href="http://potato-craft.github.io">(site)</a> <br>
+	Anna: Amgestiehr3 <a target="_blank" href="http://github.com/Amgestiehr3/Amgestiehr3.github.io">(code)</a> <a target="_blank" href="http://Amgestiehr3.github.io">(site)</a> <br>
+	James: TheAndroidMaster <a target="_blank" href="http://github.com/TheAndroidMaster/TheAndroidMaster.github.io">(code)</a> <a target="_blank" href="http://TheAndroidMaster.github.io">(site)</a> <br>
+	</p>
 
-<p> <a href="http://www.cocos2d-x.org/">cocos 2d-x</a> is free and open source for game development. looks cool.</p>
+	<p> <a href="http://www.cocos2d-x.org/">cocos 2d-x</a> is free and open source for game development. looks cool.</p>
+
+	<div class="page-container" ng-controller="TodoCtrl">
+		<input type="text" ng-model="message" />
+    	<span> {{ message }} </span>
+	</div>  
 
   </div>
 </div>
