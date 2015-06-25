@@ -1,3 +1,16 @@
+var hasStorage;
+
+// Check browser support
+if (typeof(Storage) != "undefined") {
+    hasStorage=true;
+    
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+	hasStorage=false;
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
 var app = angular.module('Todo', []);
 app.controller('TodoCtrl', function($scope) {
 	$scope.message = 'Angular is pretty cool.';
@@ -11,8 +24,15 @@ app.controller('TodoCtrl', function($scope) {
     $scope.done = function(todo) {
     	var indexOf = $scope.todos.indexOf(todo);
     	if (indexOf !== -1) {
-     	 $scope.todos.splice(indexOf, 1);
+     	  $scope.todos.splice(indexOf, 1);
+     	  if(hasStorage){
+   		    // Store
+    	    localStorage.setItem("todos", JSON.stringify($scope.todos));
+    	  }	
    		}
+   		
+   		
+    	
  	};
  	
  	$scope.add = function(e) {
