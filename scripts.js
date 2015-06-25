@@ -44,6 +44,10 @@ app.controller('TodoCtrl', function($scope) {
       if (e.which && e.which === 13) {
         $scope.todos.push($scope.newTodo);
         $scope.newTodo = '';
+        if(hasStorage){
+   		  // Store
+    	  localStorage.setItem("todos", JSON.stringify($scope.todos));
+    	}	
       }
     };
 });
