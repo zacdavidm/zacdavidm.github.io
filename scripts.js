@@ -5,10 +5,9 @@ if (typeof(Storage) != "undefined") {
     hasStorage=true;
     
     // Retrieve
-    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 } else {
 	hasStorage=false;
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 }
 
 var app = angular.module('Todo', []);
