@@ -2,11 +2,7 @@ CACHE MANIFEST
 # Version 1
 
 CACHE:
-script/scriptfilename1.js
-css/cssfilename.css
-images/imagename1.png
-images/imagename2.jpg
-images/imagename3.png
+https://avatars0.githubusercontent.com/u/2008027?v=3&s=460
 
 FALLBACK:
 # This will enable imagename4.png to be as a replacement for 
