@@ -15,7 +15,7 @@ var app = angular.module('Todo', []);
 app.controller('TodoCtrl', function($scope) {
 	$scope.message = 'Angular is pretty cool.';
 	
-	var todosStorage=localStorage.getItem("todos");
+	var todosStorage = localStorage.getItem("todos");
 	
 	if(todosStorage!=null){
 	  $scope.todos=JSON.parse(todosStorage);
