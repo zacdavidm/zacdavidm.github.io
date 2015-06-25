@@ -1,5 +1,7 @@
-body{
+body,
+html{
 	overflow-x:hidden;
+	word-wrap: break-word;
 }
 
 img{
