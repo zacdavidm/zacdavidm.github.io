@@ -4,11 +4,3 @@ CACHE MANIFEST
 CACHE:
 https://avatars0.githubusercontent.com/u/2008027?v=3&s=460
 
-FALLBACK:
-# This will enable imagename4.png to be as a replacement for 
-# all resources under the images dir when there is no network connectivity.
-# images/ images/imagename4.png
-
-NETWORK:
-# This will prevent other network resources from being accessed.
-# images/imagename5.png
