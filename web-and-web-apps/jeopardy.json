@@ -1,0 +1,87 @@
+{
+html:{[
+
+{
+question:"What is Hyper Text Markup Language?",
+answer:"Used to hold content on the web. Its abbreviation is HTML."
+},
+{
+question:"What is an Anchor tag?",
+answer:"The element in HTML that creates a link to another HTML page, such as http://google.com"
+},
+{
+question:"What is the 'video' tag?",
+answer:"This is the tag that is used for video, such as an MP4"
+},
+{
+question:"What is an Attribute?",
+answer:"It is a key value pair inside the opening tag of an html element."
+},
+{
+question:"What is href?",
+answer:"It is an attribute used to create a hypertext reference to another web document. It is used by '<link>' and '<a>'."
+},
+,
+{
+question:"What is src?",
+answer:"It is an attribute used to load a data file to an element. It is used by 'img' 'video', 'audio', and 'script'."
+},
+
+]},
+css:{[
+
+{
+question:"What are inline, internal, and external CSS?",
+answer:"Three ways to attach CSS to an HTML page. Use an attribute, a tag in the head, and a separate document."
+},
+{
+question:"What are tag, class, id selectors?",
+answer:"Three ways to apply css styling to html. They are used in a stylesheet and include a '.' and a '#'"
+},
+{
+question:"What are cascading style sheets?",
+answer:"Used to apply styling to html. Its shortened name is CSS!"
+},
+{
+question:"What is Bootstrap?",
+answer:"Front end CSS framework. Made by the makers of twitter."
+},
+{
+question:"What is rem?",
+answer:"A pixel ratio way to describe sizes in CSS. Much better for accessibility and responsive web design."
+}
+
+]},
+js:{[
+
+{
+question:"What is JavaScript?",
+answer:"The programming language of the web. Its abbreviation is JS."
+},
+{
+question:"What is AngularJS?",
+answer:"An MVC framework in JS that uses declarative binding to make html better."
+},
+{
+question:"What are Objects?",
+answer:"A collection of properties called keys and values that can be nested to show relationship."
+},
+{
+question:"What is an Array?",
+answer:"A series of items. In javascript it is enclosed in square brackets. Not a list."
+},
+{
+question:"What is innerHTML?",
+answer:"A method in javascript to change the contents of an HTML element. Used in the Date() example."
+},
+{
+question:"What is Model View Controller?",
+answer:"A method of separating data, display, and logic. It's abbreviation is MVC."
+},
+{
+question:"What is a variable?",
+answer:"A way to make a placeholder for other data. In algebra it might by 'x'."
+}
+
+]}
+}
